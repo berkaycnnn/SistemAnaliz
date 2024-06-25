@@ -47,7 +47,7 @@ public class OdemeServlet extends HttpServlet{
 		
 		if(spslist.isEmpty()) 
 		{
-			session.setAttribute("basarisizmsg", "Etkinlik Sepetiniz Boş Lütfen Etkinlik Ekleyin");
+			session.setAttribute("basarisizmsg", "Sipariş Sepetiniz Boş Lütfen Sipariş Ekleyin");
 			resp.sendRedirect("odeme.jsp" );
 		} else {
 			SpsOdemeImpl dao2= new SpsOdemeImpl(DBConnect.getConn());
